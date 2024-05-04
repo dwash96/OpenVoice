@@ -27,7 +27,7 @@ setup(name='MyShell-OpenVoice',
       python_requires='>=3.9',
       install_requires=[
             'librosa>=0.9.1',
-            'faster-whisper>=0.9.0',
+            'faster-whisper @ git+https://github.com/SYSTRAN/faster-whisper.git@8d5e6d56d9500bde881a48eba7d4af5161afa15c',
             'pydub>=0.25.1',
             'wavmark>=0.0.3',
             'numpy>=1.22.0',
