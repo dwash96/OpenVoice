@@ -100,7 +100,7 @@ def split_audio_vad(audio_path, audio_name, target_dir, split_seconds=10.0):
     os.makedirs(wavs_folder, exist_ok=True)
     start_time = 0.
     count = 0
-    num_splits = int(np.round(audio_dur / split_seconds))
+    num_splits = int(np.ceil(audio_dur / split_seconds))
     assert num_splits > 0, 'input audio is too short'
     interval = audio_dur / num_splits
 
